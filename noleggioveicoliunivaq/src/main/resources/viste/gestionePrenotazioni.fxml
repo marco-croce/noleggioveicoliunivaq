@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.noleggioveicoliunivaq.controller.GestionePrenotazioniController">
+   <children>
+      <Label alignment="CENTER" layoutX="80.0" layoutY="28.0" prefHeight="25.0" prefWidth="500.0" text="Gestione Prenotazioni">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="indietroButton" layoutX="430.0" layoutY="385.0" mnemonicParsing="false" onAction="#indietroAction" prefHeight="50.0" prefWidth="124.0" style="-fx-background-color: #d41737;" text="Indietro">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Separator layoutX="30.0" layoutY="72.0" prefHeight="5.0" prefWidth="600.0" style="-fx-background-color: yellow;">
+         <padding>
+            <Insets top="2.5" />
+         </padding>
+      </Separator>
+      <Button fx:id="inviaButton" layoutX="106.0" layoutY="385.0" mnemonicParsing="false" onAction="#inviaAction" prefHeight="50.0" prefWidth="124.0" style="-fx-background-color: #04de3b;" text="Invia">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="messaggioTextArea" layoutX="59.0" layoutY="150.0" prefHeight="200.0" prefWidth="542.0" promptText="Notificare la data e l'ora in cui ritirare il veicolo">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

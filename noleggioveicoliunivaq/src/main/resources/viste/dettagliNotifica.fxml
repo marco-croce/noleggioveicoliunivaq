@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.noleggioveicoliunivaq.controller.DettagliNotificaController">
+   <children>
+      <Label alignment="CENTER" layoutX="30.0" layoutY="31.0" prefHeight="25.0" prefWidth="600.0" text="Messaggio">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="messaggioTextField" alignment="TOP_LEFT" editable="false" layoutX="30.0" layoutY="109.0" prefHeight="250.0" prefWidth="600.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Separator layoutX="30.0" layoutY="84.0" prefHeight="5.0" prefWidth="600.0" style="-fx-background-color: yellow;">
+         <padding>
+            <Insets top="2.5" />
+         </padding>
+      </Separator>
+      <Button fx:id="homeButton" layoutX="205.0" layoutY="435.0" mnemonicParsing="false" onAction="#homeAction" prefHeight="50.0" prefWidth="250.0" text="Indietro">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="feedbackButton" layoutX="255.0" layoutY="369.0" mnemonicParsing="false" onAction="#feedbackAction" prefHeight="50.0" prefWidth="150.0" text="Scrivi Feedback" />
+   </children>
+</AnchorPane>

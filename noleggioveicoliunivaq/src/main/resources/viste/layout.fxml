@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.noleggioveicoliunivaq.controller.LayoutController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="95.0" fitWidth="734.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@titolo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="5.0" right="1.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="84.0" fitWidth="152.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets bottom="8.0" left="1.0" right="5.0" top="8.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@logo-univaq.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <right>
+      <HBox prefHeight="500.0" prefWidth="90.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <Separator halignment="LEFT" orientation="VERTICAL" prefHeight="500.0" prefWidth="5.0" style="-fx-background-color: #FFE896;">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Separator>
+            <ImageView fx:id="logoutImage" fitHeight="75.0" fitWidth="75.0" onMouseClicked="#esciAction" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@logout.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="212.5" left="4.5" right="4.5" top="212.5" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </HBox>
+   </right>
+   <left>
+      <HBox prefHeight="500.0" prefWidth="172.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="menuBar" prefHeight="500.0" prefWidth="150.0" style="-fx-background-color: #FFE896;" />
+            <Separator orientation="VERTICAL" prefHeight="500.0" prefWidth="0.0" style="-fx-background-color: #FFE896;" />
+         </children>
+      </HBox>
+   </left>
+</BorderPane>

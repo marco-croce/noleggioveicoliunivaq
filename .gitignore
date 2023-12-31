@@ -1,0 +1,8 @@
+noleggioveicoliunivaq/target/
+!**/src/main/**
+
+### Eclipse ###
+.classpath
+.project
+.settings
+.metadata

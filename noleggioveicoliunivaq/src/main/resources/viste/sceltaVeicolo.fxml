@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.noleggioveicoliunivaq.controller.SceltaVeicoloController">
+   <children>
+      <TableView fx:id="veicoliTable" layoutX="15.0" layoutY="15.0" prefHeight="470.0" prefWidth="630.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+        <columns>
+          <TableColumn fx:id="marcaTableColumn" prefWidth="75.0" text="Marca" />
+          <TableColumn fx:id="modelloTableColumn" prefWidth="75.0" text="Modello" />
+            <TableColumn fx:id="coloreTableColumn" prefWidth="75.0" text="Colore" />
+            <TableColumn fx:id="potenzaTableColumn" prefWidth="75.0" text="Potenza" />
+            <TableColumn fx:id="postiTableColumn" prefWidth="75.0" text="N° Posti" />
+            <TableColumn fx:id="consumoTableColumn" prefWidth="75.0" text="Consumo" />
+            <TableColumn fx:id="dettaglioTableColumn" prefWidth="75.0" />
+            <TableColumn fx:id="sceltaTableColumn" prefWidth="75.0" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

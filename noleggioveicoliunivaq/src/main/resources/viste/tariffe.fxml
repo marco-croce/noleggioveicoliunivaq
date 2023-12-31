@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.noleggioveicoliunivaq.controller.TariffeController">
+   <children>
+      <Label layoutX="252.0" layoutY="14.0" text="Gestione Tariffe">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tariffeTable" layoutX="5.0" layoutY="102.0" prefHeight="395.0" prefWidth="631.0">
+        <columns>
+          <TableColumn fx:id="categoriaTableColumn" prefWidth="172.0" text="Categoria" />
+          <TableColumn fx:id="prezzoTableColumn" prefWidth="133.0" text="Prezzo" />
+            <TableColumn fx:id="idTableColumn" text="Id" />
+            <TableColumn fx:id="modificaTableColumn" prefWidth="111.0" text="Modifica" />
+            <TableColumn fx:id="eliminaTableColumn" minWidth="0.0" prefWidth="134.0" text="Elimina" />
+        </columns>
+      </TableView>
+      <Button fx:id="aggiungiTariffaButton" layoutX="475.0" layoutY="52.0" mnemonicParsing="false" onAction="#aggiungiTariffaAction" prefHeight="30.0" prefWidth="150.0" text="Aggiungi Tariffa">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="indietroButton" layoutX="14.0" layoutY="52.0" mnemonicParsing="false" onAction="#annullaAction" prefHeight="30.0" prefWidth="100.0" text="Indietro">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

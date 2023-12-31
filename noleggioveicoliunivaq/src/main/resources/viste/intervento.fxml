@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.noleggioveicoliunivaq.controller.InterventoController">
+   <children>
+      <Label alignment="CENTER" layoutX="80.0" layoutY="14.0" prefHeight="30.0" prefWidth="500.0" text="Richiesta Intervento di Assistenza">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="30.0" layoutY="66.0" prefHeight="200.0" prefWidth="600.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="398.4" minWidth="10.0" prefWidth="186.8000244140625" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="428.8000244140625" minWidth="0.0" prefWidth="413.9999755859375" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="40.0" prefWidth="186.0" text="Messaggio">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="messaggioTextField" alignment="TOP_LEFT" prefHeight="175.0" prefWidth="406.0" promptText="Scrivi il motivo della richiesta..." GridPane.columnIndex="1">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+         </children>
+      </GridPane>
+      <Separator layoutX="80.0" layoutY="364.0" prefHeight="5.0" prefWidth="500.0" style="-fx-background-color: yellow;" />
+      <Button fx:id="homeButton" layoutX="255.0" layoutY="450.0" mnemonicParsing="false" onAction="#homeAction" prefHeight="35.0" prefWidth="150.0" text="Home" />
+      <Button fx:id="richiestaButton" layoutX="255.0" layoutY="292.0" mnemonicParsing="false" onAction="#richiestaAction" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #04de3b;" text="Invia">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label fx:id="richiestaLabel" alignment="CENTER" layoutX="80.0" layoutY="393.0" prefHeight="26.0" prefWidth="500.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

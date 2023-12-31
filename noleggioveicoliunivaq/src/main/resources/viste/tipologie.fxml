@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.noleggioveicoliunivaq.controller.TipologieController">
+   <children>
+      <Label layoutX="25.0" layoutY="27.0" text="Gestione Tipologie">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tipologiaTable" layoutX="17.0" layoutY="76.0" prefHeight="354.0" prefWidth="625.0">
+        <columns>
+          <TableColumn fx:id="nomeTableColumn" prefWidth="160.0" text="Nome" />
+          <TableColumn fx:id="idTableColumn" prefWidth="104.0" text="Id" />
+            <TableColumn fx:id="numeroVeicoliTableColumn" prefWidth="152.0" text="N° Veicoli" />
+            <TableColumn fx:id="modificaTableColumn" prefWidth="113.0" text="Modifica" />
+            <TableColumn fx:id="eliminaTableColumn" prefWidth="94.0" text="Elimina" />
+        </columns>
+      </TableView>
+      <Button fx:id="aggiungiTipologiaButton" layoutX="483.0" layoutY="27.0" mnemonicParsing="false" onAction="#aggiungiTipologiaAction" prefHeight="35.0" prefWidth="150.0" text="Aggiungi Tipologia">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="141.0" layoutY="442.0" prefHeight="35.0" prefWidth="378.0" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
